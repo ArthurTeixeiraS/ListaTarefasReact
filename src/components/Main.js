@@ -41,6 +41,7 @@ export default class Main extends Component {
     novaTarefa = novaTarefa.trim();
 
     if (!novaTarefa) {
+      // eslint-disable-next-line no-alert
       alert('Digite alguma coisa!');
       return;
     }
