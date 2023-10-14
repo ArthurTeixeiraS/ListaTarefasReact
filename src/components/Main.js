@@ -16,7 +16,6 @@ export default class Main extends Component {
 
   componentDidMount() {
     const tarefas = JSON.parse(localStorage.getItem('tarefas'));
-
     if (!tarefas) return;
 
     this.setState({ tarefas });
@@ -86,7 +85,6 @@ export default class Main extends Component {
     return (
       <div className="main">
         <h1>Lista de Tarefas</h1>
-
         <Form
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}

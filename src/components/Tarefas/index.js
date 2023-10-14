@@ -9,7 +9,7 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
   return (
     <ul className="tarefas">
       {tarefas.map((tarefa, index) => (
-        <li key={tarefa}>
+        <li key={tarefas.indexOf(tarefa)}>
           {tarefa}
           <span>
             <FaEdit
